@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="text-4xl font-bold text-center">Chicken Race Game</h1>
+    <h2 class="text-2xl font-semibold text-center">Who is racing?</h2>
+    <div class="text-center m-auto">
+      <form class="p-4 m-auto text-center" id="nameForm">
+        <input
+          class="border-2 border-gray-300 p-2 rounded"
+          type="text"
+          id="nameInput"
+          placeholder="Enter a name"
+        />
+        <button
+          class="bg-blue-500 text-white font-bold py-2 px-4 rounded"
+          type="button"
+        >
+          Add Name
+        </button>
+      </form>
+      <div
+        id="nameList"
+        class="grid grid-cols-2 gap-2 border-2 border-gray-300 p-4 m-4 w-1/2 text-center mx-auto |"
+      ></div>
+      <button
+        class="bg-blue-500 text-white font-bold py-2 px-4 rounded"
+        id="startRace"
+      >
+        Start
+      </button>
+    </div>
+    <div>
+      <canvas class="m-auto" id="raceCanvas" width="200" height="100"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
